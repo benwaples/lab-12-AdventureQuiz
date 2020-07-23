@@ -15,8 +15,7 @@ form.addEventListener('submit', (e) => {
 
     setUser(user);
 
-    console.log(user);
-    
+    window.location = './map';
 });
 
 

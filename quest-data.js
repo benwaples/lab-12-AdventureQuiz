@@ -8,7 +8,7 @@ const monsters = {
         top: '89%',
         left: '44%'
     },
-    image: 'http://www.placekitten.com/300/300',
+    image: 'https://s3-us-west-2.amazonaws.com/melingoimages/Images/62025.jpg',
     description: `
         You enter the quest chamber only to be confronted by a hoard of
         monsters. And they look hungry. What do you do?
