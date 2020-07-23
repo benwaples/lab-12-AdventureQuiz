@@ -8,7 +8,7 @@ const monsters = {
         top: '89%',
         left: '44%'
     },
-    image: 'monsters.jpg',
+    image: 'http://www.placekitten.com/300/300',
     description: `
         You enter the quest chamber only to be confronted by a hoard of
         monsters. And they look hungry. What do you do?
@@ -53,7 +53,7 @@ const dragon = {
         top: '57%',
         left: '67%'
     },
-    image: 'dragon.jpg',
+    image: 'https://komonews.com/resources/media/37b1fc46-fefa-4b97-81bd-d374bfcba746-large16x9_seattle_dragons.jpg?1566406918046',
     audio: 'dragon.wav',
     action: 'dragon-growl.aiff',
     description: `

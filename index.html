@@ -4,33 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Document</title>
 </head>
 
 <body>
-   <form>
-       <label>
-           <input name="name"/>
-       </label>
-       <label>
-           Wizard
-           <input type="radio" name="class" value="wizard">
-       </label>
-       <label>
-           Fighter
-           <input type="radio" name="class" value="fighter">
-       </label>
-       <label>
-           Rogue
-           <input type="radio" name="class" value="rogue">
-       </label>
-       <label>
-           Celriec
-           <input type="radio" name="class" value="celriec">
-       </label>
-       <button>submit</button>
-   </form>
-
+    <main>
+        <header>
+            <div id="headTitle">
+                <h1>Welcome to your adventure</h1>
+                <h3>enter your name below and choose your character, then enter the simulation....</h3>
+            </div>
+            <div id="logo">
+                <h1>logo</h1>
+            </div>
+        </header>
+        <div id="instructions"></div>
+        <div id="form">
+            <form>
+                <label id="name">
+                    Enter Your Name
+                    <input name="name"/>
+                </label>
+                <label class="warrior">
+                    Wizard
+                    <input type="radio" name="class" value="wizard">
+                </label>
+                <label class="warrior">
+                    Fighter
+                    <input type="radio" name="class" value="fighter">
+                </label>
+                <label class="warrior">
+                    Rogue
+                    <input type="radio" name="class" value="rogue">
+                </label>
+                <label class="warrior">
+                    Cleric
+                    <input type="radio" name="class" value="cleric">
+                </label>
+                <button>submit</button>
+            </form>
+        </div>
+    </main>
     <script type="module" src="app.js"></script>
 </body>
 
