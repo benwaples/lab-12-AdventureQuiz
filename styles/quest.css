@@ -1,0 +1,54 @@
+body {
+    --color1: #a3a380ff;
+    --color2: #d6ce93ff;
+    --color3: #efebceff;
+    --color4: #d8a48fff;
+    --color5: #bb8588ff;
+
+    background-color: var(--color1);
+    font-family: 'Rowdies', cursive;
+}
+header {
+    background-color: var(--color3);
+}
+
+img {
+    /* width: 200px; */
+    height: 300px;
+}
+main {
+    background-color: var(--color5) ;
+}
+
+#quest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,105 @@
+
+body {
+    --color1: #a3a380ff;
+    --color2: #d6ce93ff;
+    --color3: #efebceff;
+    --color4: #d8a48fff;
+    --color5: #bb8588ff;
+
+    background-color: var(--color3) ;
+
+    font-family: 'Rowdies', cursive;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    background-color: var(--color1);
+    border-radius: 10px;
+    color: var(--color3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#logo {
+    margin-top: 10px;
+}
+
+#headTitle {
+    margin-left: 10px;
+}
+
+label {
+    display: block;
+    font-size: 24px;
+}
+
+#name {
+    background-color: var(--color4);
+    border-radius: 5px;
+    height: 64px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    border: solid 2px var(--color5);
+    border-radius: 10px;
+    background-color: var(--color5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+.warrior {
+    background-color: var(--color4);
+    display: flex;
+    border-radius: 5px;
+    height: 64px;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: max-content;
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--color2);
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+}
+
+#logo {
+    margin-right: 20px;
+} 
+
+h1 {
+    font-size: 24px;
+}
+
+#sith {
+    background-color: red;
+}
+
+#jedi {
+    background-color: green;
+}
+
+#rs {
+    background-color: #1405BD;
+    color: white
+}
+
+#ss {
+    background-color: yellow;
+}

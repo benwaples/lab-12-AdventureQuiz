@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div id="headTitle">
+                <h1>Welcome to The Jedi Adventure</h1>
+                <p>during the clone wars</p>
+                <h3>enter your name below and choose your character, then enter the simulation....</h3>
+            </div>
+            <div>
+                <img id="logo" src="./assets/Star_Wars-logo-B06952A462-seeklogo.com.png" width="100px"/>
+            </div>
+        </header>
+        <div id="instructions"></div>
+        <div id="form">
+            <form>
+                <label id="name">
+                    Enter Your Name
+                    <input name="name"/>
+                </label>
+                <label id="sith" class="warrior">
+                    <h1>Sith</h1>
+                    <input type="radio" name="class" value="wizard">
+                </label>
+                <label id="jedi" class="warrior">
+                    <h1>Jedi</h1>
+                    <input type="radio" name="class" value="fighter">
+                </label>
+                <label id="rs" class="warrior">
+                    <h1>Republic Senator</h1>
+                    <input type="radio" name="class" value="rogue">
+                </label>
+                <label id="ss" class="warrior">
+                    <h1>Separatist Senator</h1>
+                    <input type="radio" name="class" value="cleric">
+                </label>
+                <button>enter</button>
+            </form>
+        </div>
+    </main>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
