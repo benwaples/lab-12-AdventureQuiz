@@ -15,8 +15,10 @@ for (let i = 0; i < allQuests.length; i ++) {
 }
 
 if (user.hp <= 0) {
+    alert(`${user.name} of the ${user.class} clan has perished. You won't be missed dirtbag!`);
     window.location = '../results/index.html';
 } else if (conqueredQuests === allQuests.length) {
+    alert(`${user.name} of the ${user.class} clan has survived the quests!.`);
     window.location = '../results/index.html';
 } else {
     for (let i = 0; i < allQuests.length; i++) {

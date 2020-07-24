@@ -13,11 +13,12 @@
     <main>
         <header>
             <div id="headTitle">
-                <h1>Welcome to your adventure</h1>
+                <h1>Welcome to The Jedi Adventure</h1>
+                <p>during the clone wars</p>
                 <h3>enter your name below and choose your character, then enter the simulation....</h3>
             </div>
-            <div id="logo">
-                <h1>logo</h1>
+            <div>
+                <img id="logo" src="./assets/Star_Wars-logo-B06952A462-seeklogo.com.png" width="100px"/>
             </div>
         </header>
         <div id="instructions"></div>
@@ -27,23 +28,23 @@
                     Enter Your Name
                     <input name="name"/>
                 </label>
-                <label class="warrior">
-                    Wizard
+                <label id="sith" class="warrior">
+                    <h1>Sith</h1>
                     <input type="radio" name="class" value="wizard">
                 </label>
-                <label class="warrior">
-                    Fighter
+                <label id="jedi" class="warrior">
+                    <h1>Jedi</h1>
                     <input type="radio" name="class" value="fighter">
                 </label>
-                <label class="warrior">
-                    Rogue
+                <label id="rs" class="warrior">
+                    <h1>Republic Senator</h1>
                     <input type="radio" name="class" value="rogue">
                 </label>
-                <label class="warrior">
-                    Cleric
+                <label id="ss" class="warrior">
+                    <h1>Separatist Senator</h1>
                     <input type="radio" name="class" value="cleric">
                 </label>
-                <button>submit</button>
+                <button>enter</button>
             </form>
         </div>
     </main>

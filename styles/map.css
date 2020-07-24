@@ -5,11 +5,48 @@ body {
     --color4: #d8a48fff;
     --color5: #bb8588ff;
 
-    background-color: pink;
+    background-color: var(--color3);
 
     font-family: 'Rowdies', cursive;
 }
 
+
+
+header {
+    width: 100%;
+    height: 150px;
+    background-color: var(--color1);
+    border-radius: 10px;
+    color: var(--color3);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#logo {
+    margin-right: 20px;
+}
+
+#headTitle {
+    margin-left: 10px;
+}
+
+
+#quest-list {
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 a, span {
     display: block;
+    margin: 5px;
+}
+
+#quest-head {
+    border-bottom: 1px solid black;
 }
