@@ -10,6 +10,6 @@ body {
     font-family: 'Rowdies', cursive;
 }
 
-a {
+a, span {
     display: block;
 }

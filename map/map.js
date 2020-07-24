@@ -2,9 +2,13 @@ import { getUser } from '../userUtils.js';
 import allQuests from '../quest-data.js';
 
 const questList = document.querySelector('#quest-list');
+const user = getUser();
+
+if (user.hp <= 0) {
+    window.location = '../results/index.html';
+}
 
 for (let i = 0; i < allQuests.length; i++) {
-    const user = getUser();
 
     const quest = allQuests[i];
     
