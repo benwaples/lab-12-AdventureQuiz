@@ -1,3 +1,5 @@
+import { getUser, setUser } from '../userUtils.js';
+
 export function renderQuest(data) {
     const questSectionEl = document.createElement('section');
 
@@ -33,6 +35,30 @@ export function renderQuest(data) {
 
     const button = document.createElement('button');
     button.textContent = 'Submit';
+    formEl.addEventListener('submit', (e) =>{
+        e.preventDefault();
+
+        const formData = new FormData(formEl);
+
+        const userChoiceId = formData.get('choices');
+        const choiceResult = findById(data.choices, userChoiceId);
+
+        const userData = getUser();
+
+        userData.gold += choiceResult.gold;
+        userData.hp += choiceResult.hp;
+        userData.completed[data.id] = true;
+
+        setUser(userData);
+
+        const resultScriptDiv = document.querySelector('#results');
+        resultScriptDiv.textContent = choiceResult.result;
+
+        const nextQuestButt = document.querySelector('#next-quest');
+        nextQuestButt.classList.remove('hidden');
+
+
+    });
     formEl.append(button);
     
     questSectionEl.append(formEl);

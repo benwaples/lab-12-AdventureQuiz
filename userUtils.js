@@ -12,3 +12,10 @@ export function setUser(user) {
     const stringyUser = JSON.stringify(user);
     localStorage.setItem('USER', stringyUser);
 }
+
+export function getUser() {
+    const rawUser = localStorage.getItem('USER');
+    const user = JSON.parse(rawUser);
+    
+    return user;
+}
