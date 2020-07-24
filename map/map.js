@@ -14,12 +14,14 @@ for (let i = 0; i < allQuests.length; i++) {
         finishedQuest.href = '/quest/?id=' + quest.id;
 
         questList.append(finishedQuest);
+    } else {
+        const questLink = document.createElement('a');
+        questLink.textContent = quest.title;
+        questLink.href = '/quest/?id=' + quest.id;
+    
+        questList.append(questLink);
+
     }
     
-    const questLink = document.createElement('a');
-    questLink.textContent = quest.title;
-    questLink.href = '/quest/?id=' + quest.id;
-
-    questList.append(questLink);
 }
 
